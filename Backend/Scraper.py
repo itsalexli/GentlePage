@@ -1,7 +1,19 @@
 from bs4 import BeautifulSoup
 import re
+from flask import Flask, request
+from flask_cors import CORS, cross_origin
 
-def clean_html(file_path):
+
+app = Flask(__name__)
+CORS(app)
+
+
+@app.route("/")
+def home():
+    return {"yo": "gurt"}
+
+@app.route("/clean_html", methods=["POST"])
+def clean_html():
     """
     Clean HTML file by removing unnecessary elements while preserving content structure.
     
@@ -13,8 +25,8 @@ def clean_html(file_path):
     """
     
     # Read the HTML file
-    with open(file_path, 'r', encoding='utf-8') as file:
-        html_content = file.read()
+    html_content = request.data.decode('utf-8')
+    print(html_content)
     
     # Parse with BeautifulSoup
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -125,48 +137,51 @@ def clean_html(file_path):
     # Get the cleaned HTML
     cleaned_html = soup.prettify()
     
-    return cleaned_html
-
-
-def main():
-    """Main function to run the cleaner"""
-    import os
-    
-    # Get the directory where this script is located
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    input_file = os.path.join(script_dir, 'Sample2.txt')
-    output_file = os.path.join(script_dir, 'cleaned_output.html')
-    
-    print(f"Cleaning HTML from {input_file}...")
-    
-    try:
-        # Read original file to get its size
-        with open(input_file, 'r', encoding='utf-8') as file:
-            original_html = file.read()
-        original_size = len(original_html)
-        
-        cleaned_html = clean_html(input_file)
-        cleaned_size = len(cleaned_html)
-        
-        # Calculate reduction
-        reduction = original_size - cleaned_size
-        reduction_percent = (reduction / original_size * 100) if original_size > 0 else 0
-        
-        # Save to output file
-        with open(output_file, 'w', encoding='utf-8') as file:
-            file.write(cleaned_html)
-        
-        print(f"✓ Cleaned HTML saved to {output_file}")
-        print(f"✓ Original size: {original_size:,} characters")
-        print(f"✓ Cleaned size:  {cleaned_size:,} characters")
-        print(f"✓ Reduced by:    {reduction:,} characters ({reduction_percent:.1f}%)")
-        
-    except FileNotFoundError:
-        print(f"Error: Could not find {input_file}")
-    except Exception as e:
-        print(f"Error: {e}")
-
+    return {"success": "ok", "html": cleaned_html}
 
 if __name__ == "__main__":
-    main()
+    app.run(host="127.0.0.1", port=5000, debug=True)
+
+
+# def main():
+#     """Main function to run the cleaner"""
+#     import os
+    
+#     # Get the directory where this script is located
+#     script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+#     input_file = os.path.join(script_dir, 'Sample2.txt')
+#     output_file = os.path.join(script_dir, 'cleaned_output.html')
+    
+#     print(f"Cleaning HTML from {input_file}...")
+    
+#     try:
+#         # Read original file to get its size
+#         with open(input_file, 'r', encoding='utf-8') as file:
+#             original_html = file.read()
+#         original_size = len(original_html)
+        
+#         cleaned_html = clean_html(input_file)
+#         cleaned_size = len(cleaned_html)
+        
+#         # Calculate reduction
+#         reduction = original_size - cleaned_size
+#         reduction_percent = (reduction / original_size * 100) if original_size > 0 else 0
+        
+#         # Save to output file
+#         with open(output_file, 'w', encoding='utf-8') as file:
+#             file.write(cleaned_html)
+        
+#         print(f"✓ Cleaned HTML saved to {output_file}")
+#         print(f"✓ Original size: {original_size:,} characters")
+#         print(f"✓ Cleaned size:  {cleaned_size:,} characters")
+#         print(f"✓ Reduced by:    {reduction:,} characters ({reduction_percent:.1f}%)")
+        
+#     except FileNotFoundError:
+#         print(f"Error: Could not find {input_file}")
+#     except Exception as e:
+#         print(f"Error: {e}")
+
+
+# if __name__ == "__main__":
+#     main()
