@@ -108,6 +108,10 @@
               <span class="sr-only">
                Close Search
               </span>
+              <svg aria-hidden="true" class="svg-inline--fa fa-times fa-w-11 collapse-x" focusable="false" role="img" viewbox="0 0 352 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <span class="fa fa-remove collapse-x">&nbsp;</span> Font Awesome fontawesome.com -->
              </button>
             </div>
@@ -163,7 +167,11 @@
           <div class="sl-header fixed-top" id="nav-header">
            <div class="nav-bar container">
             <div class="sl-nav navbar navbar-expand-lg navbar-light" data-disable-sticky="false" id="sl-nav">
-             <button aria-controls="sl-header-offcanvas" aria-label="open menu" class="navbar-toggler collapsed menuOpen" id="menuOpen" type="button">
+             <button aria-controls="sl-header-offcanvas" aria-label="open menu" class="navbar-toggler collapsed menuOpen" data-bs-target="#sl-header-offcanvas" data-bs-toggle="offcanvas" id="menuOpen" type="button">
+              <svg aria-hidden="true" class="svg-inline--fa fa-bars sl-icon_size_xl sl-icon" data-fa-i2svg="" data-icon="bars" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M389.4 150.1l-286.7 0 0-20.5 286.7 0 0 20.5zm0 122.9l-286.7 0 0-20.5 286.7 0 0 20.5zM287 395.9l-184.3 0 0-20.5 184.3 0 0 20.5z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <span class="fak fa-bars sl-icon_size_xl sl-icon"></span> Font Awesome fontawesome.com -->
              </button>
              <!-- logo desktop and mobile -->
@@ -187,7 +195,11 @@
               <!-- mobile -->
               <div class="offcanvas-header">
                <!-- close icon -->
-               <button aria-controls="sl-header-offcanvas" aria-label="close menu" class="canvas-close menuClose" id="menuClose">
+               <button aria-controls="sl-header-offcanvas" aria-label="close menu" class="canvas-close menuClose" data-bs-dismiss="offcanvas" id="menuClose">
+                <svg aria-hidden="true" class="svg-inline--fa fa-close sl-icon_size_xl sl-icon" data-fa-i2svg="" data-icon="close" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M246 277.2L120.1 403.1l-14.5-14.5L231.5 262.8 105.6 136.9l14.5-14.5L246 248.3 371.9 122.4l14.5 14.5L260.5 262.8 386.4 388.6l-14.5 14.5L246 277.2z" fill="currentColor">
+                 </path>
+                </svg>
                 <!-- <span class="fak fa-close sl-icon_size_xl sl-icon"></span> Font Awesome fontawesome.com -->
                </button>
                <!-- mobile logo in expanded hamburger menu -->
@@ -203,13 +215,64 @@
                <!-- Below initial code for Coveo class search bar -->
                <div class="search-bar-mobile" data-section="header-search" id="headerSearchBarMobile">
                 <div class="search-box container">
-                 <div class="CoveoSearchInterface Coveostate CoveoComponentState CoveoComponentOptions CoveoQueryController CoveoHistoryController CoveoDebug coveo-after-initialization" data-auto-trigger-query="false" data-enable-history="true" id="search-box-mobile">
+                 <div class="search-icon">
+                  <svg aria-hidden="true" class="svg-inline--fa fa-search sl-icon_size_md sl-icon custom-icon" data-fa-i2svg="" data-icon="search" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M225.5 129.6a112.6 112.6 0 1 0 0 225.3 112.6 112.6 0 1 0 0-225.3zM92.4 242.3c0-73.5 59.6-133.1 133.1-133.1s133.1 59.6 133.1 133.1c0 33.1-12.1 63.3-32 86.6l70 70-14.5 14.5-70-70c-23.3 20-53.5 32-86.6 32c-73.5 0-133.1-59.6-133.1-133.1z" fill="currentColor">
+                   </path>
+                  </svg>
+                  <!-- <span class="fak fa-search sl-icon_size_md sl-icon custom-icon" role="presentation"></span> Font Awesome fontawesome.com -->
+                 </div>
+                 <div class="CoveoSearchInterface Coveostate CoveoComponentState CoveoComponentOptions CoveoQueryController CoveoHistoryController CoveoDebug coveo-after-initialization" data-auto-trigger-query="false" data-enable-history="true" id="search-box-mobile" style="display: block;">
+                  <div class="CoveoFacetsMobileMode">
+                  </div>
+                  <div class="CoveoAnalytics">
+                  </div>
+                  <div class="coveo-search-section">
+                   <div class="CoveoSearchbox" data-add-search-button="false" data-enable-omnibox="true" data-placeholder="Search">
+                    <div aria-haspopup="listbox" class="CoveoOmnibox coveo-query-syntax-disabled magic-box" role="search">
+                     <div class="magic-box-input">
+                      <div class="magic-box-underlay">
+                       <span class="magic-box-highlight-container">
+                        <span data-id="start" data-success="true">
+                         <span data-id="Any" data-success="true" data-value="">
+                         </span>
+                        </span>
+                       </span>
+                       <span class="magic-box-ghost-text">
+                       </span>
+                      </div>
+                      <input aria-autocomplete="list" aria-controls="coveo-magicbox-suggestions-73fc2480-43aa-4c49-59c8-8f7c2e5dd617" aria-expanded="false" aria-label="Search" aria-owns="coveo-magicbox-suggestions-73fc2480-43aa-4c49-59c8-8f7c2e5dd617" autocomplete="off" form="coveo-dummy-form" placeholder="Search" role="combobox" title="Insert a query. Press enter to send" type="text"/>
+                      <div aria-hidden="true" aria-label="Clear" class="magic-box-clear coveo-accessible-button" role="button" tabindex="-1">
+                       <div class="magic-box-icon">
+                        <svg aria-label="Clear" class="magic-box-clear-svg" enable-background="new 0 0 13 13" focusable="false" role="img" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                         <title>
+                          Clear
+                         </title>
+                         <g fill="currentColor">
+                          <path d="m7.881 6.501 4.834-4.834c.38-.38.38-1.001 0-1.381s-1.001-.38-1.381 0l-4.834 4.834-4.834-4.835c-.38-.38-1.001-.38-1.381 0s-.38 1.001 0 1.381l4.834 4.834-4.834 4.834c-.38.38-.38 1.001 0 1.381s1.001.38 1.381 0l4.834-4.834 4.834 4.834c.38.38 1.001.38 1.381 0s .38-1.001 0-1.381z">
+                          </path>
+                         </g>
+                        </svg>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="magic-box-suggestions">
+                      <div aria-label="Search Suggestions" class="coveo-magicbox-suggestions" id="coveo-magicbox-suggestions-73fc2480-43aa-4c49-59c8-8f7c2e5dd617" role="listbox">
+                       <div role="option">
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
                   <div class="input-wrapper coveo-mobile-error-hidden" role="alert">
                    <ul class="coveo-search-error">
                     <li class="error-required">
                      Please enter a search term.
                     </li>
                    </ul>
+                  </div>
+                  <div aria-live="polite" class="coveo-visible-to-screen-reader-only">
                   </div>
                  </div>
                 </div>
@@ -221,11 +284,19 @@
                 <li class="nav-item">
                  <div class="sl-mega-menu">
                   <div class="dropdown" id="sl-mega-menu-dashboard-investments">
-                   <button aria-expanded="false" class="main-nav-item-container nav-link dropdown-toggle show btn btn-primary" type="button">
+                   <button aria-expanded="false" class="main-nav-item-container nav-link dropdown-toggle show btn btn-primary" data-bs-toggle="dropdown" type="button">
                     <span>
                      Investments
                     </span>
+                    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_sm sl-dropdown-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-chevron-down sl-icon_size_sm sl-dropdown-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block"></span> Font Awesome fontawesome.com -->
+                    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_md sl-dropdown-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-chevron-down sl-icon_size_md sl-dropdown-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none"></span> Font Awesome fontawesome.com -->
                    </button>
                    <div class="dropdown-menu menu-content">
@@ -244,6 +315,13 @@
                               <a href="/en/investments/">
                                Investments overview
                               </a>
+                              <span class="d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block dropdown-label-icon">
+                               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-right sl-icon_size_lg sl-icon custom-icon" data-fa-i2svg="" data-icon="chevron-right" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M171.3 413.4l-14.5-14.5L293 262.8 156.8 126.6l14.5-14.5L321.9 262.8 171.3 413.4z" fill="currentColor">
+                                </path>
+                               </svg>
+                               <!-- <span class="fak fa-chevron-right sl-icon_size_lg sl-icon custom-icon"></span> Font Awesome fontawesome.com -->
+                              </span>
                              </h2>
                             </div>
                             <div class="sub-menu-container">
@@ -587,11 +665,19 @@
                 <li class="nav-item">
                  <div class="sl-mega-menu">
                   <div class="dropdown" id="sl-mega-menu-dashboard-insurance">
-                   <button aria-expanded="false" class="main-nav-item-container nav-link dropdown-toggle show btn btn-primary" type="button">
+                   <button aria-expanded="false" class="main-nav-item-container nav-link dropdown-toggle show btn btn-primary" data-bs-toggle="dropdown" type="button">
                     <span>
                      Insurance
                     </span>
+                    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_sm sl-dropdown-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-chevron-down sl-icon_size_sm sl-dropdown-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block"></span> Font Awesome fontawesome.com -->
+                    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_md sl-dropdown-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-chevron-down sl-icon_size_md sl-dropdown-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none"></span> Font Awesome fontawesome.com -->
                    </button>
                    <div class="dropdown-menu menu-content">
@@ -610,6 +696,13 @@
                               <a href="/en/insurance/">
                                Insurance overview
                               </a>
+                              <span class="d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block dropdown-label-icon">
+                               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-right sl-icon_size_lg sl-icon custom-icon" data-fa-i2svg="" data-icon="chevron-right" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M171.3 413.4l-14.5-14.5L293 262.8 156.8 126.6l14.5-14.5L321.9 262.8 171.3 413.4z" fill="currentColor">
+                                </path>
+                               </svg>
+                               <!-- <span class="fak fa-chevron-right sl-icon_size_lg sl-icon custom-icon"></span> Font Awesome fontawesome.com -->
+                              </span>
                              </h2>
                             </div>
                             <div class="sub-menu-container">
@@ -883,11 +976,19 @@
                 <li class="nav-item">
                  <div class="sl-mega-menu">
                   <div class="dropdown" id="sl-mega-menu-dashboard-health">
-                   <button aria-expanded="false" class="main-nav-item-container nav-link dropdown-toggle show btn btn-primary" type="button">
+                   <button aria-expanded="false" class="main-nav-item-container nav-link dropdown-toggle show btn btn-primary" data-bs-toggle="dropdown" type="button">
                     <span>
                      Health
                     </span>
+                    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_sm sl-dropdown-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-chevron-down sl-icon_size_sm sl-dropdown-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block"></span> Font Awesome fontawesome.com -->
+                    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_md sl-dropdown-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-chevron-down sl-icon_size_md sl-dropdown-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none"></span> Font Awesome fontawesome.com -->
                    </button>
                    <div class="dropdown-menu menu-content">
@@ -906,6 +1007,13 @@
                               <a href="/en/health/">
                                Health insurance overview
                               </a>
+                              <span class="d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block dropdown-label-icon">
+                               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-right sl-icon_size_lg sl-icon custom-icon" data-fa-i2svg="" data-icon="chevron-right" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M171.3 413.4l-14.5-14.5L293 262.8 156.8 126.6l14.5-14.5L321.9 262.8 171.3 413.4z" fill="currentColor">
+                                </path>
+                               </svg>
+                               <!-- <span class="fak fa-chevron-right sl-icon_size_lg sl-icon custom-icon"></span> Font Awesome fontawesome.com -->
+                              </span>
                              </h2>
                             </div>
                             <div class="sub-menu-container">
@@ -1213,9 +1321,17 @@
                 <!-- /* Including Search */ -->
                 <li class="nav-item">
                  <div class="d-none d-md-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" data-comp="search">
-                  <button aria-controls="headerSearchBar" aria-expanded="false" class="utility-nav-item-container nav-link sl-search-btn collapsed" type="button">
+                  <button aria-controls="headerSearchBar" aria-expanded="false" class="utility-nav-item-container nav-link sl-search-btn collapsed" data-bs-target="#headerSearchBar" data-bs-toggle="collapse" type="button">
                    <div class="label-container">
+                    <svg aria-hidden="true" class="svg-inline--fa fa-search sl-icon_size_md sl-icon custom-icon icn-hover-hidden" data-fa-i2svg="" data-icon="search" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M225.5 129.6a112.6 112.6 0 1 0 0 225.3 112.6 112.6 0 1 0 0-225.3zM92.4 242.3c0-73.5 59.6-133.1 133.1-133.1s133.1 59.6 133.1 133.1c0 33.1-12.1 63.3-32 86.6l70 70-14.5 14.5-70-70c-23.3 20-53.5 32-86.6 32c-73.5 0-133.1-59.6-133.1-133.1z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-search sl-icon_size_md sl-icon custom-icon icn-hover-hidden" role="presentation"></span> Font Awesome fontawesome.com -->
+                    <svg aria-hidden="true" class="svg-inline--fa fa-search-hover sl-icon_size_md sl-icon custom-icon icn-hover-show" data-fa-i2svg="" data-icon="search-hover" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M225.5 139.9a102.4 102.4 0 1 0 0 204.8 102.4 102.4 0 1 0 0-204.8zM82.2 242.3c0-79.2 64.2-143.4 143.4-143.4s143.4 64.2 143.4 143.4c0 32.2-10.6 61.9-28.5 85.9l63.5 63.5-29 29-63.5-63.5c-23.9 17.9-53.7 28.5-85.9 28.5c-79.2 0-143.4-64.2-143.4-143.4z" fill="currentColor">
+                     </path>
+                    </svg>
                     <!-- <span class="fak fa-search-hover sl-icon_size_md sl-icon custom-icon icn-hover-show" role="presentation"></span> Font Awesome fontawesome.com -->
                     <span class="d-none d-md-none d-lg-inline d-xl-inline d-xxl-inline">
                      Search
@@ -1228,7 +1344,15 @@
                 <li class="nav-item">
                  <a class="utility-nav-item-container nav-link" href="https://www.sunnet.sunlife.com/mysunlife/mbrregistration/req/pub/init/mbrRegistration" target="_self">
                   <div class="label-container">
+                   <svg aria-hidden="true" class="svg-inline--fa fa-edit sl-icon_size_md sl-icon custom-icon icn-hover-hidden" data-fa-i2svg="" data-icon="edit" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M327.9 104.9l75.9 75.9L168.3 416.4l-75.9 0 0-75.9L327.9 104.9zm-215 244l0 47 47 0L333.9 221.8l-47-47L112.9 348.9zM301.4 160.4l47 47 26.5-26.5-47-47-26.5 26.5z" fill="currentColor">
+                    </path>
+                   </svg>
                    <!-- <span class="fak fa-edit sl-icon_size_md sl-icon custom-icon icn-hover-hidden" role="presentation"></span> Font Awesome fontawesome.com -->
+                   <svg aria-hidden="true" class="svg-inline--fa fa-edit-hover sl-icon_size_md sl-icon custom-icon icn-hover-show" data-fa-i2svg="" data-icon="edit-hover" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M403.8 185.1l-75.9-75.9-41 41L362.9 226l41-41zm-55.4 55.4l-75.9-75.9L92.4 344.7l0 75.9 75.9 0L348.4 240.5z" fill="currentColor">
+                    </path>
+                   </svg>
                    <!-- <span class="fak fa-edit-hover sl-icon_size_md sl-icon custom-icon icn-hover-show" role="presentation"></span> Font Awesome fontawesome.com -->
                    <span class="dropdown-label d-none d-md-none d-lg-inline d-xl-inline d-xxl-inline">
                     Register
@@ -1242,7 +1366,15 @@
                 <li class="nav-item">
                  <a class="utility-nav-item-container nav-link" href="https://www.sunnet.sunlife.com/signin/mysunlife/home.wca" id="signinbutton" target="_self">
                   <div class="label-container">
+                   <svg aria-hidden="true" class="svg-inline--fa fa-account sl-icon_size_md sl-icon custom-icon icn-hover-hidden" data-fa-i2svg="" data-icon="account" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M246 129.6a61.5 61.5 0 1 0 0 122.9 61.5 61.5 0 1 0 0-122.9zm82 61.6A81.9 81.9 0 1 1 164.1 191a81.9 81.9 0 1 1 163.9 .2zM112.3 402.8l-9.7 3.3c-9.7 3.3-9.7 3.3-9.7 3.3s0 0 0 0s0 0 0 0l0-.1-.1-.3c-.1-.3-.2-.6-.3-1c-.2-.8-.5-2-.8-3.4c-.5-2.8-1.1-6.7-1-11.3c0-9.3 2.3-21.7 10.9-34c17.3-24.7 57.6-45.3 144.3-45.3c86.2 0 126.4 20.6 143.9 45.3c8.7 12.3 11.1 24.6 11.3 33.9c.1 4.6-.4 8.5-.9 11.3c-.3 1.4-.5 2.5-.7 3.4c-.1 .4-.2 .8-.3 1l-.1 .3 0 .1c0 0 0 0 0 0c0 0 0 0 0 0l-9.7-3.2c-9.7-3.2-9.7-3.2-9.7-3.2s0 0 0 0s0 0 0 0s0 0 0 0c0-.1 0-.2 .1-.4c.1-.4 .2-1 .4-1.8c.3-1.7 .6-4.2 .6-7.3c-.1-6.1-1.7-14.2-7.5-22.4c-11.6-16.3-43.1-36.7-127.3-36.7c-84.8 0-116.1 20.3-127.6 36.6c-5.7 8.2-7.2 16.2-7.2 22.3c0 3.1 .3 5.6 .7 7.3c.2 .8 .3 1.5 .4 1.8c.1 .2 .1 .3 .1 .4l0 0c0 0 0 0 0 0s0 0 0 0s0 0 0 0zm267.3 .2s0 0 0 0s0 0 0 0z" fill="currentColor">
+                    </path>
+                   </svg>
                    <!-- <span class="fak fa-account sl-icon_size_md sl-icon custom-icon icn-hover-hidden" role="presentation"></span> Font Awesome fontawesome.com -->
+                   <svg aria-hidden="true" class="svg-inline--fa fa-account-hover sl-icon_size_md sl-icon custom-icon icn-hover-show" data-fa-i2svg="" data-icon="account-hover" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M246 139.9a51.2 51.2 0 1 0 0 102.4 51.2 51.2 0 1 0 0-102.4zm92.2 51.3A92.2 92.2 0 1 1 153.8 191a92.2 92.2 0 1 1 184.4 .2zM122 399.5l-19.4 6.6c-19.4 6.7-19.4 6.7-19.4 6.6s0 0 0 0l0-.1-.1-.2L83 412c-.1-.4-.2-.8-.4-1.3c-.3-1.1-.6-2.4-1-4.1c-.6-3.3-1.3-7.9-1.2-13.3c0-10.9 2.7-25.5 12.8-39.8c20.3-28.9 65-49.7 152.7-49.7c87.2 0 131.8 20.8 152.3 49.6c10.2 14.3 13 28.8 13.2 39.7c.1 5.4-.4 10-1 13.3c-.3 1.7-.6 3.1-.9 4.1c-.1 .5-.3 1-.4 1.3l-.1 .5-.1 .2 0 .1c0 0 0 0 0 0l-19.5-6.3c-19.5-6.4-19.5-6.4-19.5-6.3s0 0 0 0l0 .1 0 .1 0 .1c0 .1 0 0 0 0c0-.1 .1-.5 .2-1.1c.2-1.2 .4-3 .4-5.3c-.1-4.5-1.2-10.5-5.6-16.7c-8.7-12.2-35.8-32.4-118.9-32.4c-83.8 0-110.7 20.2-119.2 32.2c-4.3 6.1-5.3 12-5.3 16.5c0 2.3 .2 4.1 .5 5.3c.1 .6 .2 .9 .2 1.1c0 .1 0 .1 0 0l0-.1 0-.1 0-.1c0 0 0 0 0 0z" fill="currentColor">
+                    </path>
+                   </svg>
                    <!-- <span class="fak fa-account-hover sl-icon_size_md sl-icon custom-icon icn-hover-show" role="presentation"></span> Font Awesome fontawesome.com -->
                    <span class="dropdown-label d-none d-md-none d-lg-inline d-xl-inline d-xxl-inline">
                     Sign in
@@ -1260,8 +1392,12 @@
                   <li>
                    <div aria-label="Region Selection" class="sl-region-menu">
                     <div class="region-menu-container dropdown" id="sl-region-dd">
-                     <button aria-expanded="false" class="nav-link dropdown-toggle btn btn-primary" id="sl-region-menu-dd" type="button">
+                     <button aria-expanded="false" class="nav-link dropdown-toggle btn btn-primary" data-bs-toggle="dropdown" id="sl-region-menu-dd" type="button">
                       <div class="label-container">
+                       <svg aria-hidden="true" class="svg-inline--fa fa-location sl-icon_size_md sl-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none dropdown-label-icon" data-fa-i2svg="" data-icon="location" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M102.6 239.1c0-82.1 56.8-150.4 141.4-150.4c84.3 0 145.3 67.9 145.3 150.4c0 28.7-10.9 55.9-33.2 86.5c-22.1 30.4-56.1 65-103.3 108.5l-6.9 6.4-6.9-6.4c-47.2-43.6-81.1-78.1-103.3-108.5c-22.3-30.6-33.2-57.8-33.2-86.5zM244.1 109.2c-71.6 0-121 57.2-121 129.9c0 22.9 8.5 46 29.2 74.4c19.8 27.2 50.3 58.7 93.6 99.1c43.4-40.4 73.8-71.9 93.6-99.1c20.7-28.5 29.2-51.5 29.2-74.4c0-72.3-52.9-129.9-124.8-129.9zm1.9 81.9a41 41 0 1 0 0 81.9 41 41 0 1 0 0-81.9zm61.4 41a61.4 61.4 0 1 1 -122.9 0 61.4 61.4 0 1 1 122.9 0z" fill="currentColor">
+                        </path>
+                       </svg>
                        <!-- <span class="fak fa-location sl-icon_size_md sl-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none dropdown-label-icon"></span> Font Awesome fontawesome.com -->
                        <span class="dropdown-label d-inline-block d-md-inline-block d-lg-inline d-xl-inline d-xxl-inline">
                         Canada
@@ -1269,11 +1405,19 @@
                          Canada English
                         </span>
                        </span>
+                       <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_sm sl-icon custom-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                        </path>
+                       </svg>
                        <!-- <span class="fak fa-chevron-down sl-icon_size_sm sl-icon custom-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" role="presentation"></span> Font Awesome fontawesome.com -->
+                       <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_md sl-icon custom-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                        </path>
+                       </svg>
                        <!-- <span class="fak fa-chevron-down sl-icon_size_md sl-icon custom-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" role="presentation"></span> Font Awesome fontawesome.com -->
                       </div>
                      </button>
-                     <div aria-labelledby="sl-region-menu-dd" class="dropdown-menu dropdown-menu-end">
+                     <div aria-labelledby="sl-region-menu-dd" class="dropdown-menu dropdown-menu-end" style="left: 2009px; width: fit-content;">
                       <!-- /*  Including Regional Menu    */ -->
                       <div>
                        <div class="xf-content-height">
@@ -1530,6 +1674,7 @@
                              </ul>
                             </div>
                            </div>
+                           <hr aria-hidden="true" class="sl-divider hr"/>
                            <a class="world-wide-content dropdown-item sl-link" data-rr-ui-dropdown-item="" href="https://www.sunlife.com/en/" target="_blank">
                             <div class="d-inline">
                              Worldwide (sunlife.com)
@@ -1548,12 +1693,27 @@
                   <li>
                    <div class="sl-menu-dropdown">
                     <div class="dropdown" data-testid="test-menu-dropdown" id="sl-dropdown-language-utility">
-                     <button aria-controls="language-dropdown-menu" aria-expanded="false" class="utility-nav-item-container nav-link btn btn-secondary dropdown-toggle" id="sl-dropdown-toggle-language-utility" type="button">
+                     <button aria-controls="language-dropdown-menu" aria-expanded="false" class="utility-nav-item-container nav-link btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" id="sl-dropdown-toggle-language-utility" type="button">
                       <span class="item-content-container">
+                       <span class="d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none dropdown-label-icon">
+                        <svg aria-hidden="true" class="svg-inline--fa fa-language sl-icon_size_md sl-icon" data-fa-i2svg="" data-icon="language" data-prefix="fak" focusable="false" role="img" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M101.3 215l74.8 0c-6.7 33.6-6.7 68.8 0 102.4l-74.9 0c-5.7-16-8.8-33.3-8.8-51.2s3.2-35.2 8.9-51.2zm9.1-20.5c22.3-41.6 63.3-72.1 111-79.9c-18.6 23.8-32.1 51.1-40.4 79.9l-70.6 0zM246 117.3c20 22.3 34.5 48.9 43.5 77.3l-87 0c9-28.4 23.5-54.9 43.5-77.3zM294.9 215c7.3 33.5 7.3 68.9 0 102.4l-97.9 0c-7.3-33.5-7.3-68.9 0-102.4l97.9 0zm20.9 102.4c6.7-33.6 6.7-68.8 0-102.4l74.7 0c5.9 16.1 9.1 33.4 9.1 51.2s-3.2 35.1-9.1 51.2l-74.7 0zm-26.4 20.5c-9 28.4-23.5 54.9-43.5 77.3c-20-22.3-34.5-48.9-43.5-77.3l87 0zm-68 80c-48.2-7.8-89-38.2-111.2-80l70.8 0c8.3 28.9 21.8 56.2 40.4 80zM84.7 331.5l0 .1c26 63.6 88.6 108.7 161.3 108.7c72.4 0 134.8-45.6 161-108.5c.1-.1 .1-.3 .2-.4c8.4-20.3 13-42.3 13-65.2s-4.6-44.9-13-65.2c-.1-.1-.1-.3-.2-.4C380.8 137.8 318.4 92.2 246 92.2c-94.9 0-174 78.3-174 174.1c0 23 4.5 45.1 12.8 65.3zM381.4 194.6l-70.5 0c-8.3-28.9-21.8-56.2-40.4-79.9c47.9 7.9 88.6 38.6 110.9 79.9zm0 143.4c-22.3 41.3-63 72-110.9 79.9c18.6-23.8 32.1-51 40.4-79.9l70.5 0z" fill="currentColor">
+                         </path>
+                        </svg>
+                        <!-- <span class="fak fa-language sl-icon_size_md sl-icon"></span> Font Awesome fontawesome.com -->
+                       </span>
                        <span class="dropdown-label">
                         Language
                        </span>
+                       <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_sm sl-icon custom-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                        </path>
+                       </svg>
                        <!-- <span class="fak fa-chevron-down sl-icon_size_sm sl-icon custom-icon d-none d-lg-inline-block d-xl-inline-block d-xxl-inline-block" role="presentation"></span> Font Awesome fontawesome.com -->
+                       <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down sl-icon_size_md sl-icon custom-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" data-fa-i2svg="" data-icon="chevron-down" data-prefix="fak" focusable="false" role="presentation" style="width: 0.9609375em;" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M396.6 208.6l-14.5-14.5L246 330.2 109.9 194.1 95.4 208.6 246 359.2 396.6 208.6z" fill="currentColor">
+                        </path>
+                       </svg>
                        <!-- <span class="fak fa-chevron-down sl-icon_size_md sl-icon custom-icon d-inline-block d-md-inline-block d-lg-none d-xl-none d-xxl-none" role="presentation"></span> Font Awesome fontawesome.com -->
                       </span>
                      </button>
@@ -1594,6 +1754,7 @@
                   </li>
                  </ul>
                 </div>
+                <hr aria-hidden="true" class="sl-divider hr region-divider"/>
                </div>
               </div>
              </div>
@@ -1605,6 +1766,33 @@
        </div>
       </div>
      </div>
+    </div>
+    <div class="breadcrumb aem-GridColumn aem-GridColumn--default--12">
+     <nav aria-label="Breadcrumb" class="vertical-middle-align no-gutter clearfix" data-section="nav-breadcrumb">
+      <ol class="sl-breadcrumbs">
+       <li class="breadcrumb-item Default-0">
+        <a class="sl-link sl-link-sm" href="/en/">
+         Home
+        </a>
+        <span aria-hidden="true" class="breadcrumb-separator">
+         /
+        </span>
+       </li>
+       <li class="breadcrumb-item Default-1">
+        <a class="sl-link sl-link-sm" href="/en/health/">
+         Health
+        </a>
+        <span aria-hidden="true" class="breadcrumb-separator">
+         /
+        </span>
+       </li>
+       <li class="breadcrumb-item Default-2 active current-item">
+        <a aria-current="page" class="sl-link sl-link-sm disabled-breadcrumb" href="">
+         Critical illness insurance
+        </a>
+       </li>
+      </ol>
+     </nav>
     </div>
     <div class="layout-container aem-GridColumn aem-GridColumn--default--12" id="main-content" role="main">
      <div class="row align-items-start mb-sm-sl40 mb-sl32">
@@ -1713,6 +1901,13 @@
          <div class="sl-dynamic-card-container sl-segmented-blocks multi mb-lg-sl56 mb-sl48">
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-demographics sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M158.5 327.6c24.7-16.6 58.9-24.1 97.5-24.1s72.8 7.5 97.5 24.1c24.9 16.7 39.8 42.4 39.8 77.7l-8 0c0-32.6-13.6-55.8-36.3-71c-22.9-15.3-55.3-22.7-93.1-22.7s-70.2 7.4-93.1 22.7c-22.7 15.2-36.3 38.4-36.3 71l-8 0c0-35.3 14.9-61 39.8-77.7zM256 116a67 67 0 1 0 0 134 67 67 0 1 0 0-134zm75 67a75 75 0 1 1 -150 0 75 75 0 1 1 150 0zM44 44l424 0 0 424L44 468 44 44zm8 8l0 408 408 0 0-408L52 52z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-demographics" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Single people
             </h3>
@@ -1728,6 +1923,13 @@
           </div>
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-family-friends sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M235.2 230.7l.7 0c16.3 0 30.7 8.3 39 20.9c1.4 2 4.1 2 5.5 0c8.5-12.6 22.7-20.8 39-20.8c1.9 0 3.8 .1 5.7 .3c32.1 3.9 45.7 42.8 26.2 67.8l-1.2 1.5-.1 0-72.6 93-74.7-95.8c-21.1-27-2-66.6 32.2-66.8l0 0zm0 8c-27.6 .2-43 32.1-26 53.9l68.4 87.7 68.7-88 0 0c14.4-20.6 2.6-50.3-22-53.4c0 0 0 0 0 0c-1.5-.2-3.2-.3-4.7-.3c-13.5 0-25.3 6.9-32.4 17.3c0 0 0 0 0 0c-4.6 6.7-14.2 6.7-18.8 0l0 0c-7-10.4-18.9-17.3-32.4-17.3l-.7 0zm-148.5-88l381.3 0L468 468 86.7 468l0-317.3zm8 8l0 301.3L460 460l0-301.3-365.3 0zm34.7 34.7l296 0 0 232-296 0 0-232zm8 8l0 216 280 0 0-216-280 0zM256 95.5L311.7 154l-5.8 5.5L256 107.1l-49.9 52.4-5.8-5.5L256 95.5zm0-45.9a22.6 22.6 0 1 0 0 45.1 22.6 22.6 0 1 0 0-45.1zm30.6 22.6a30.6 30.6 0 1 1 -61.1 0 30.6 30.6 0 1 1 61.1 0zM44 150.7l50.7 0 0 317.3L44 468l0-317.3zm8 8L52 460l34.7 0 0-301.3-34.7 0z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-family-friends" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Families
             </h3>
@@ -1754,6 +1956,13 @@
           </div>
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-starting sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M90.3 455.6l0-230 8 0 0 230-8 0zM116.4 62.9l139.6 0 0 8-134.7 0L66.9 180.4c.2 11.4 3.9 22.8 11.1 31.4c7.4 8.7 18.6 14.8 34.4 14.8c26.2 0 45.7-24.1 45.7-47.1l8 0c0 26.8-22.3 55.1-53.7 55.1c-18 0-31.6-7-40.5-17.7c-8.9-10.5-13-24.2-13-37.5l0-.9L116.4 62.9zM260 71.8l0 107.7c0 13.2-4.2 27-12.8 37.5c-8.7 10.6-21.7 17.7-38.9 17.7c-16.5 0-29.2-7.2-37.7-17.7c-8.4-10.5-12.5-24.2-12.5-37.4l8 0c0 11.7 3.7 23.5 10.8 32.4c7 8.8 17.4 14.7 31.4 14.7c14.8 0 25.6-6 32.8-14.8c7.3-8.9 10.9-20.7 10.9-32.4l0-107.7 8 0zm-74.7-7.1L166 185.2l-7.9-1.3L177.4 63.4l7.9 1.3zM256 183.4l-187.8 0 0-8 187.8 0 0 8zM413.7 455.6l0-230 8 0 0 230-8 0zM256 62.9l139.6 0L453 178.5l0 .9c0 13.2-4.1 27-13 37.5c-8.9 10.6-22.4 17.7-40.5 17.7c-31.3 0-53.7-28.4-53.7-55.1l8 0c0 23.1 19.4 47.1 45.7 47.1c15.8 0 27-6.1 34.3-14.8c7.2-8.6 10.9-20 11.1-31.4L390.7 70.9 256 70.9l0-8zm14.9 148.9c7.2 8.8 18 14.8 32.8 14.8c14 0 24.4-6 31.4-14.7c7.1-8.9 10.8-20.7 10.8-32.4l8 0c0 13.2-4.2 26.9-12.5 37.4c-8.5 10.6-21.1 17.7-37.7 17.7c-17.3 0-30.3-7.1-39-17.7c-8.6-10.5-12.7-24.2-12.7-37.4l8 0c0 11.7 3.7 23.5 10.9 32.4zM334.6 63.4L353.9 184l-7.9 1.3L326.7 64.6l7.9-1.3zM256 175.4l187.8 0 0 8-187.8 0 0-8zm.7 102.3l133.7 0 0 100.1-133.7 0 0-100.1zm8 8l0 84.1 117.7 0 0-84.1-117.7 0zm-81.7-.1c-11.4 0-22.4 4.5-30.5 12.4s-12.6 18.6-12.6 29.8L140 456l-8 0 0-128.2c0-13.3 5.4-26.1 15-35.5s22.6-14.7 36.1-14.7s26.5 5.3 36.1 14.7s15 22.2 15 35.5l0 127.9-8 0 0-127.9c0-11.2-4.5-21.9-12.6-29.8s-19-12.4-30.5-12.4zm313 174l-480 0 0-8 480 0 0 8z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-starting" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Business owners
             </h3>
@@ -1780,6 +1989,13 @@
          <div class="sl-dynamic-card-container sl-segmented-blocks multi mb-lg-sl56 mb-sl48">
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-cash-sign sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M239.7 67.7c-104.4 0-189 84.6-189 189s84.6 189 189 189l0 8c-108.8 0-197-88.2-197-197s88.2-197 197-197l32.9 0 0 8-32.9 0zm33 0a189 189 0 1 0 0 377.9 189 189 0 1 0 0-377.9zm197 189a197 197 0 1 1 -393.9 0 197 197 0 1 1 393.9 0zM268 384.6l0-246.7 8 0 0 246.7-8 0zM110 158.8l-33.9 0 0-8 33.9 0 0 8zM110 362l-33.9 0 0-8 33.9 0 0 8zM83.4 260.6l-34 0 0-8 34 0 0 8zM272 166c-24.6 0-44.5 20-44.5 44.5s20 44.5 44.5 44.5l0 8c-29 0-52.5-23.6-52.5-52.5s23.6-52.5 52.5-52.5s52.5 23.6 52.5 52.5l-8 0c0-24.6-20-44.5-44.5-44.5zm44.5 141.7c0-24.6-20-44.5-44.5-44.5l0-8c29 0 52.5 23.6 52.5 52.5s-23.6 52.5-52.5 52.5s-52.5-23.6-52.5-52.5l8 0c0 24.6 20 44.5 44.5 44.5s44.5-20 44.5-44.5zM272.6 453.6l-33 0 0-8 33 0 0 8z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-cash-sign" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Lump sum payout
             </h3>
@@ -1792,6 +2008,13 @@
           </div>
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-manage sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M93 103.7L93 48l8 0 0 55.7-8 0zM93 456l0-270.6 8 0L101 456l-8 0zm4-348.3a36.8 36.8 0 1 0 0 73.7 36.8 36.8 0 1 0 0-73.7zm45 36.8a45 45 0 1 1 -90.1 0 45 45 0 1 1 90.1 0zM411 164.9L411 48l8 0 0 116.9-8 0zM411 456l0-209.4 8 0L419 456l-8 0zm4-287.1a36.8 36.8 0 1 0 0 73.7 36.8 36.8 0 1 0 0-73.7zm45 36.8a45 45 0 1 1 -90.1 0 45 45 0 1 1 90.1 0zM252 297.7L252 48l8 0 0 249.7-8 0zM252 456l0-76.6 8 0 0 76.6-8 0zm4-154.3a36.8 36.8 0 1 0 0 73.7 36.8 36.8 0 1 0 0-73.7zm45 36.8a45 45 0 1 1 -90.1 0 45 45 0 1 1 90.1 0z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-manage" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Payout flexibility
             </h3>
@@ -1804,6 +2027,13 @@
           </div>
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-diversity-inclusion sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M85.5 285.4l.1 .1L210 406.5c10.2 10 26.8 9.7 36.8-.7c10-10.3 10-26.6 0-36.5l-68.1-66.5 5.6-5.7 68.2 66.3c5.8 5.8 9.1 13.2 9.8 20.8c.9 9.6-2.4 19.6-9.6 27.1c-3.9 4-8.5 6.9-13.5 8.6c-2.5 .9-5.2 1.4-7.8 1.7c-9.6 .9-19.4-2.2-26.8-9.4L79.9 291.1s0 0 0 0l5.6-5.7zm180.1-65.3l5.6 5.5 5.7-5.6-5.7-5.6-5.6 5.7zm33.3-29.8l-2.4-.8-25.3 24.9 5.7 5.6 21.6-21.3c5.4 1.7 11 2.5 16.9 2.5c5.3 0 10.4-.7 15.3-2.1c2.9-.8 5.7-1.8 8.3-3c19.9-9 33.7-29 33.7-52.3h-8c0 27.2-22 49.3-49.3 49.3c-5.8 0-11.3-1-16.6-2.9zm-40.3-70.5l-5.7-5.7c1.4-1.4 2.8-2.7 4.2-4.1c-49.7-47.7-128.6-47.1-177.4 1.9c-49.4 49.6-49.3 129.7 .2 179.1l5.6-5.7 .1 .1 0 0c-46.4-46.2-46.5-121.3-.2-167.8c46.2-46.4 121.3-46.5 167.8-.2l0 0 7.9 7.8-58.8 59.1c-14.8 14.8-15.1 38.5-1 53.9l0 0c15 16 40.3 16.6 55.9 1.2l14-13.8-5.6-5.5-14 13.6 0 0c-12.4 12.3-32.5 11.8-44.4-.9c-11.2-12.2-10.9-31.1 .7-42.8l0 0 64.7-65.1-3.9-3.2-6-6c-1.5 1.3-2.9 2.7-4.3 4.1zm-5.7-5.7l5.7 5.7c1.4-1.4 2.8-2.8 4.3-4.1c46.6-42.3 118.6-41 163.5 3.9c46.4 46.3 46.4 121.5 .2 167.8l0 0-49.6 49.9-28.7 28.9-65.4 65.9c-10 10.1-26.2 10.4-36.4 .5l0 0c-3.7-3.6-6.1-8-7.3-12.6c-2.5 .9-5.2 1.4-7.8 1.7c1.4 6.2 4.6 12 9.5 16.7c13.4 12.9 34.6 12.6 47.6-.6L432.2 293.1c49.3-49.5 49.3-129.6-.2-179.1c-48.1-48-125.2-49.3-174.9-3.8c-1.4 1.3-2.8 2.7-4.2 4.1zM367.3 308l0 0-1.6-1.5c9.7 .7 19.7-2.7 27.1-10.3c12.9-13.4 12.6-34.6-.6-47.6l-53.1-52.3c-2.7 1.2-5.5 2.2-8.3 3l55.8 55c10.1 10 10.3 26.2 .5 36.4c-10 10.4-26.4 10.6-36.8 .6l-.1 .1L276.9 220l-5.7 5.6 90.5 88c10.1 10 10.2 26.1 .4 36.4c-10.1 10.4-24.2 10.8-33.3 4.5l-16.2-15.8c5.9 5.8 9.2 13.2 9.9 20.8l1.1 1.1 .2 .2c6.8 4.9 15.6 6.9 24.3 5.4l28.7-28.9c1.6-10.4-1.6-21.4-9.6-29.4zM252.4 363.5c5.8 5.8 9.1 13.2 9.8 20.8l3 2.9c13.4 13.1 35.1 12.7 48.1-.8c7.2-7.5 10.3-17.3 9.3-26.8c-.7-7.6-4.1-15-9.9-20.8l-.4-.4-83.4-82.2-5.6 5.7 83.7 82.6c10.1 10 10.3 26.2 .5 36.4c-10 10.4-26.5 10.6-36.8 .7l-18.3-18z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-diversity-inclusion" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Complementary to health insurance
             </h3>
@@ -1860,6 +2090,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-0">
              <button aria-expanded="false" aria-label="Video transcript" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                Video transcript
               </span>
@@ -2010,6 +2252,10 @@
                </path>
               </svg>
               <!-- <i title="opens an internal link" class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false"></i> Font Awesome fontawesome.com -->
+              <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
              </a>
             </div>
@@ -2050,6 +2296,10 @@
                </path>
               </svg>
               <!-- <i title="opens an internal link" class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false"></i> Font Awesome fontawesome.com -->
+              <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
              </a>
             </div>
@@ -2104,6 +2354,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-0">
              <button aria-expanded="false" aria-label="Do I need to take a medical exam for critical illness insurance?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                Do I need to take a medical exam for critical illness insurance?
               </span>
@@ -2135,6 +2397,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-1">
              <button aria-expanded="false" aria-label="Is a critical illness insurance payout taxable in Canada?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                Is a critical illness insurance payout taxable in Canada?
               </span>
@@ -2165,6 +2439,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-2">
              <button aria-expanded="false" aria-label="How long is the waiting period for critical illness insurance?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                How long is the waiting period for critical illness insurance?
               </span>
@@ -2195,6 +2481,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-3">
              <button aria-expanded="false" aria-label="What types of cancer are covered by critical illness insurance?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                What types of cancer are covered by critical illness insurance?
               </span>
@@ -2224,6 +2522,10 @@
                    </path>
                   </svg>
                   <!-- <i class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false" title="opens an internal link"></i> Font Awesome fontawesome.com -->
+                  <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+                   </path>
+                  </svg>
                   <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
                  </a>
                 </p>
@@ -2235,6 +2537,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-4">
              <button aria-expanded="false" aria-label="Does critical illness insurance cover me for my whole life?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                Does critical illness insurance cover me for my whole life?
               </span>
@@ -2268,6 +2582,10 @@
                    </path>
                   </svg>
                   <!-- <i class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false" title="opens an internal link"></i> Font Awesome fontawesome.com -->
+                  <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+                   </path>
+                  </svg>
                   <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
                  </a>
                 </p>
@@ -2279,6 +2597,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-5">
              <button aria-expanded="false" aria-label="Does my child need critical illness insurance?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                Does my child need critical illness insurance?
               </span>
@@ -2305,6 +2635,10 @@
                    </path>
                   </svg>
                   <!-- <i class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false" title="opens an internal link"></i> Font Awesome fontawesome.com -->
+                  <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+                   </path>
+                  </svg>
                   <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
                  </a>
                 </p>
@@ -2316,6 +2650,18 @@
            <div class="accordion-item">
             <h3 class="h3 accordion-header" id="-id-6">
              <button aria-expanded="false" aria-label="What is the difference between life insurance and critical illness insurance?" class="accordion-button collapsed" type="button">
+              <span class="accordion-icon-container">
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-up fa-w-14 sl-icon hide" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-up hide"></span> Font Awesome fontawesome.com -->
+               <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 sl-icon show" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" fill="currentColor">
+                </path>
+               </svg>
+               <!-- <span class="sl-icon fal fa-chevron-down show"></span> Font Awesome fontawesome.com -->
+              </span>
               <span class="accordion-item-heading h3">
                What is the difference between life insurance and critical illness insurance?
               </span>
@@ -2345,6 +2691,10 @@
                    </path>
                   </svg>
                   <!-- <i class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false" title="opens an internal link"></i> Font Awesome fontawesome.com -->
+                  <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+                   </path>
+                  </svg>
                   <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
                  </a>
                 </p>
@@ -2367,6 +2717,13 @@
          <div class="sl-dynamic-card-container sl-segmented-blocks multi mb-lg-sl72 mb-sm-sl64 mb-sl56">
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-calculator sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M187.2 86.7l187.9 0 0 125.3-187.9 0 0-125.3zm8 8l0 109.3 171.9 0 0-109.3-171.9 0zm97.8 152l82.1 0 0 72-82.1 0 0-72zm8 8l0 56 66.1 0 0-56-66.1 0zm-113.8-8l82.1 0 0 72-82.1 0 0-72zm8 8l0 56 66.1 0 0-56-66.1 0zM293 353.3l82.1 0 0 71.7L293 425l0-71.7zm8 8l0 55.7 66.1 0 0-55.7-66.1 0zm-113.8-8l82.1 0 0 71.7-82.1 0 0-71.7zm8 8l0 55.7 66.1 0 0-55.7-66.1 0zM134.3 44L428 44l0 424-293.7 0 0-424zm8 8l0 408L420 460l0-408L142.3 52zM92 44l46.3 0 0 8L100 52l0 408 38.3 0 0 8L92 468 92 44z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-calculator" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              How much CII do you need?
             </h3>
@@ -2386,6 +2743,10 @@
                </path>
               </svg>
               <!-- <i title="opens an internal link" class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false"></i> Font Awesome fontawesome.com -->
+              <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
              </a>
             </div>
@@ -2393,6 +2754,13 @@
           </div>
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-office-employee sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M106.4 148C90.7 148 78 160.7 78 176.4l0 201.1c0 15.7 12.7 28.4 28.4 28.4l324.9 0c15.7 0 28.4-12.7 28.4-28.4l0-201.1c0-15.7-12.7-28.4-28.4-28.4l-132.7 0 0-8 132.7 0c20.1 0 36.4 16.3 36.4 36.4l0 201.1c0 20.1-16.3 36.4-36.4 36.4l-324.9 0c-20.1 0-36.4-16.3-36.4-36.4l0-201.1c0-20.1 16.3-36.4 36.4-36.4l138.9 0 0 8-138.9 0zM74.9 208.2l388.8 0 0 8-388.8 0 0-8zm101.2 52.8a49.3 49.3 0 1 0 0 98.5 49.3 49.3 0 1 0 0-98.5zm57.3 49.3a57.3 57.3 0 1 1 -114.5 0 57.3 57.3 0 1 1 114.5 0zm182.4-23.8l-138.2 0 0-8 138.2 0 0 8zm0 42.8l-138.2 0 0-8 138.2 0 0 8zM236 97.1l72.1 0 0 72.5-72.1 0 0-72.5zm8 8l0 56.5 56.1 0 0-56.5-56.1 0zM44.2 176.4c0-20.1 16.3-36.4 36.4-36.4l37 0 0 8-37 0c-15.7 0-28.4 12.7-28.4 28.4l0 201.1c0 15.7 12.7 28.4 28.4 28.4l37 0 0 8-37 0c-20.1 0-36.4-16.3-36.4-36.4l0-201.1z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-office-employee" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Leaving your employer but want to keep your CII?
             </h3>
@@ -2412,6 +2780,10 @@
                </path>
               </svg>
               <!-- <i title="opens an internal link" class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false"></i> Font Awesome fontawesome.com -->
+              <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
              </a>
             </div>
@@ -2419,6 +2791,13 @@
           </div>
           <div class="card multi">
            <div class="card-body">
+            <div class="icon-container card-title">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-submit-claim sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100.7 76s0 0 0 0l0-4 0-3.8s0 0 0 0l0-.2c1.4 0 2.8 .1 4.3 .2l306.8 0c10.7 0 20.9 4.4 28.5 12s11.8 18 11.8 28.9L452 476l-319 0 0-367.1c0-8.7-3.4-17.1-9.5-23.2c-5.1-5.2-11.8-8.5-19-9.4l-3.8 0 0-.2zm24.2 .2c1.5 1.2 2.9 2.4 4.3 3.8c7.5 7.7 11.8 18 11.8 28.9L141 468l303 0 0-358.9c0-8.7-3.4-17.1-9.5-23.2s-14.2-9.6-22.8-9.6l-286.8 0zm265.6 63.2l-196.9 0 0-8 196.9 0 0 8zm0 63.2l-196.9 0 0-8 196.9 0 0 8zM100.7 76c-4.3 0-8.5 .8-12.5 2.4s-7.6 4.1-10.6 7.1s-5.5 6.7-7.1 10.8s-2.5 8.4-2.4 12.8l0 0 0 190.7 69.5 0 0 8-77.5 0 0-198.7c0-5.4 1-10.8 3-15.8s5-9.6 8.8-13.4s8.3-6.9 13.3-8.9s10.3-3.1 15.6-3l-.1 8zM424.6 275L318 383.2l-44.3-45.6 5.7-5.6 38.6 39.7L418.9 269.4l5.7 5.6zm-106.5 1.2c-40.7 0-73.8 33.5-73.8 75s33.1 75 73.8 75s73.8-33.5 73.8-75s-33.1-75-73.8-75zm-81.8 75c0-45.8 36.6-83 81.8-83s81.8 37.2 81.8 83s-36.6 83-81.8 83s-81.8-37.2-81.8-83z" fill="currentColor">
+              </path>
+             </svg>
+             <!-- <i class="sl-card-icon fak fa-info-submit-claim" role="presentation"></i> Font Awesome fontawesome.com -->
+            </div>
             <h3 class="h4 card-title">
              Need to submit a CII claim?
             </h3>
@@ -2441,6 +2820,10 @@
                </path>
               </svg>
               <!-- <i title="opens an internal link" class="fak fa-chevron-circle-right icn-hover-hidden" aria-hidden="false"></i> Font Awesome fontawesome.com -->
+              <svg aria-hidden="true" class="svg-inline--fa fa-chevron-circle-right-hover icn-hover-show" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M246 88.7a174.1 174.1 0 1 0 0 348.2 174.1 174.1 0 1 0 0-348.2zm75.9 174.1L212.3 372.4l-14.5-14.5L293 262.8l-95.2-95.2 14.5-14.5L321.9 262.8z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <i class="fak fa-chevron-circle-right-hover icn-hover-show" aria-hidden="true"></i> Font Awesome fontawesome.com -->
              </a>
             </div>
@@ -2474,6 +2857,10 @@
           <div class="container">
            <div class="card">
             <div class="card-body">
+             <svg aria-hidden="true" class="svg-inline--fa fa-info-meet-advisor mb-4 sl-card-icon" focusable="false" role="presentation" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M256 60c12 0 17.1 8 18.4 12c25.8 81.7 62.9 195.7 62.9 195.7l-7.6 2.5L268.2 79.5c-1-3.4-3.1-6.3-5.9-8.3s-6.2-3.2-9.6-3.2L68.5 68c-2.2 0-4.3 .4-6.3 1.3s-3.8 2.1-5.4 3.6s-2.8 3.4-3.6 5.4c-.8 2-1.2 4.2-1.2 6.3c.1 1.6 .4 3.2 .9 4.8l0 .1 35 110.7c2.1 6.9 5.2 12.8 10.3 16.9c5 4.1 12.3 6.9 23.5 6.9l68.7 0 0 8-68.7 0c-12.6 0-21.9-3.2-28.6-8.7c-6.7-5.5-10.4-13-12.8-20.7c0 0 0 0 0 0L45.3 92c-.8-2.3-1.2-4.7-1.3-7.1l0-.1 0-.1c0-3.2 .6-6.5 1.8-9.5s3-5.7 5.3-8S60 60 64 60zM84.6 448l0-52.4 8 0 0 52.4-8 0zm132 0l0-52.4 8 0 0 52.4-8 0zm50.8 0l0-56.4 8 0 0 56.4-8 0zm152.3 0l0-56.4 8 0 0 56.4-8 0zM44 84.3s0 0 0 0l0 .3c0-.1 0-.2 0-.3zM403.4 272.6l-172.6 0 0-8 172.6 0 0 8zm30.5-41l-111.7 0 0-8 111.7 0 0 8zm-10.5-8s0 0 0 0l20.3 0c6.4 0 12.6 2.6 17.2 7.2s7.1 10.8 7.1 17.3c0 0 0 0 0 0l0 147.5-302.5 0 0-147.5c0-6.5 2.6-12.7 7.1-17.3s10.7-7.2 17.2-7.2l20.4 0c6.4 0 12.6 2.6 17.2 7.2s7.1 10.8 7.1 17.3c0 0 0 0 0 0l0 61.6c0 4.4 1.8 8.6 4.8 11.7s7.2 4.8 11.5 4.8l132 0c2.1 0 4.3-.4 6.2-1.3s3.8-2 5.3-3.6s2.7-3.3 3.5-5.4s1.2-4.2 1.2-6.3l0-61.6s0 0 0 0c0-6.5 2.6-12.7 7.1-17.3s10.7-7.2 17.2-7.2zm-233.6 8c-4.3 0-8.5 1.7-11.5 4.8s-4.8 7.3-4.8 11.7l0 139.5 286.5 0 0-139.4s0 0 0 0c0-4.4-1.8-8.6-4.8-11.7s-7.2-4.8-11.5-4.8l-20.3 0c-4.3 0-8.4 1.8-11.5 4.8s-4.8 7.3-4.8 11.7c0 0 0 0 0 0l0 61.6c0 3.2-.6 6.4-1.8 9.4s-3 5.7-5.3 7.9s-4.9 4.1-7.9 5.3s-6.1 1.9-9.3 1.9l-132 0s0 0 0 0c-6.4 0-12.6-2.6-17.2-7.2s-7.1-10.8-7.1-17.3c0 0 0 0 0 0l0-61.6c0-4.4-1.8-8.6-4.8-11.7s-7.2-4.8-11.5-4.8l-20.4 0zM52 387.6L52 113 44 84.3l0 311.3 121.5 0 0-8L52 387.6z" fill="currentColor">
+              </path>
+             </svg>
              <!-- <i role="presentation" class="mb-4 sl-card-icon fak fa-info-meet-advisor"></i> Font Awesome fontawesome.com -->
              <h3 class="h3 banner-header card-title">
               Talk to an advisor
@@ -2544,6 +2931,10 @@
               Liane Goulet, B.A., B.Ed.
              </h2>
              <button aria-label="Close" class="btn-close" type="button">
+              <svg aria-hidden="true" class="svg-inline--fa fa-close sl-icon_size_xl sl-icon" focusable="false" role="img" viewbox="0 0 492 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M246 277.2L120.1 403.1l-14.5-14.5L231.5 262.8 105.6 136.9l14.5-14.5L246 248.3 371.9 122.4l14.5 14.5L260.5 262.8 386.4 388.6l-14.5 14.5L246 277.2z" fill="currentColor">
+               </path>
+              </svg>
               <!-- <span class="fak fa-close sl-icon_size_xl sl-icon"></span> Font Awesome fontawesome.com -->
              </button>
             </div>
