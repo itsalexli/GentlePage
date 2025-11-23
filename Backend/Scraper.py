@@ -595,7 +595,7 @@ def call_model(system_prompt: str, user_prompt: str) -> str:
         model=MODEL_NAME,
         instructions=system_prompt,
         input=user_prompt,
-        max_output_tokens=2000,  # cap for speed
+        max_output_tokens=3000,
     )
     return resp.output_text
 
